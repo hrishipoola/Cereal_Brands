@@ -1,1 +1,15 @@
-# Cereal_Brands
+76 Cereal Brands, a Head-to-Head Comparison
+
+A reader sent in a fun ask: Can you do an analysis comparing cereal brands? It's hard not to feel nostalgic seeing boxes of Apple Jacks, Froot Loops, and Cap'n'Crunch lined up on the shelf so we were excited to explore. We came a across a data set with >75 cereal brands across major manufacturers, including Nabisco, Quaker Oats, Kellogg's, Ralston Purina, General Mills, and Post (https://perso.telecom-paristech.fr/eagan/class/igr204/datasets). We'll explore 3 questions:
+
+Question 1: Is Consumer Reports average rating (0-100) related to sugar, calories, and fiber per serving?
+Question 2: What are the differences in sugar and calorie per serving and average rating by manufacturer?
+Question 3: Is sugar per serving related to shelf position (from bottom)?
+
+We plot stratified line plots, box plots, histograms, and heatmaps using seaborn and work with our dataframe using .get_numeric_data, .replace, .groupby, and .nlargest to reveal some fascinating insights:
+
+Insight 1: Consumers rate cereal brands with higher sugar and calorie content lower and those with higher fiber content higher, with Pearson correlations that affirm these associations.
+Insight 2: Among manufacturers, Nabisco and Quaker Oats have lower median sugar and calories per serving, while drawing higher average ratings from consumers. Vice versa for Post.
+Insight 3: The middle shelf, most visible and accessible to kids, houses brands with the highest median, 25th percentile, and 75th percentile sugar per serving and mean sugar per serving roughly twice that of the bottom shelf.
+
+In order to get to more statistically significant conclusions and models, it would be important to get an expanded sample size and better understand how the data was collected and where it came from. 
